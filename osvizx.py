@@ -209,6 +209,7 @@ def update_network_activity():
     
     max_rate = max(max(net_sent_history + net_recv_history), 0.1)
     net_ax.set_ylim(0, max_rate * 1.1)
+    
 
 def update(frame):
     top_processes = get_top_processes()
